@@ -3,62 +3,25 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>AURIX BR — IA para criar, publicar e crescer com conteúdo</title>
-<meta name="description" content="Plataforma brasileira de IA para criadores, profissionais e marcas planejarem, criarem, publicarem e acompanharem conteúdo.">
-<meta name="theme-color" content="#121216">
-<meta property="og:title" content="AURIX BR — IA para criar, publicar e crescer com conteúdo">
-<meta property="og:description" content="Plataforma brasileira de IA para criadores, profissionais e marcas planejarem, criarem, publicarem e acompanharem conteúdo.">
-<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="assets/style.css">
+<title>AURIX BR — estúdio do criador</title>
+<meta name="description" content="Planeje, crie, edite e acompanhe seu conteúdo em um só lugar. Gratuito, em português e direto no seu celular.">
+<meta name="theme-color" content="#0b0b0f">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="AURIX BR">
+<meta property="og:title" content="AURIX BR — estúdio do criador">
+<meta property="og:description" content="Planeje, crie, edite e acompanhe seu conteúdo em um só lugar. Gratuito e direto no celular.">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="assets/app.css?v=202611160623">
 </head>
 <body>
-<a class="skip" href="#conteudo">Pular para o conteúdo</a>
-<header class="topo">
-  <div class="wrap topo-in">
-    <a class="marca" href="index.html" aria-label="AURIX BR — início">
-      <img src="assets/icon.svg" alt="" width="28" height="28"><span>AURIX <b>BR</b></span>
-    </a>
-    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
-    <nav id="menu" class="menu" aria-label="Principal"><a href="index.html" aria-current="page">Início</a><a href="ferramentas.html">Ferramentas</a><a href="recursos.html">Recursos</a><a href="planos.html">Planos</a><a href="ajuda.html">Ajuda</a><a href="status.html">Andamento</a></nav>
-  </div>
-</header>
-<main id="conteudo" class="wrap">
-<section>
-  <p class="eyebrow">Em desenvolvimento · feito no Brasil</p>
-  <h1>Sua central de <span class="grad">conteúdo com IA</span>: do planejamento à análise.</h1>
-  <p class="lead">O AURIX BR reúne em um só lugar ideias, roteiros, cortes de vídeo, legendas, calendário, publicação e análise de desempenho, com um mentor de IA que explica cada sugestão.</p>
-  <div class="btns">
-    <a class="btn primario" href="ferramentas.html">Usar as ferramentas grátis</a>
-    <a class="btn" href="recursos.html">Ver todos os recursos</a>
-    <a class="btn" href="status.html">Acompanhar o desenvolvimento</a>
-  </div>
-  <div class="aviso">Já disponível, de graça e sem cadastro: <a href="cortes.html">cortes de vídeo</a>, <a href="calendario.html">calendário de conteúdo</a>, <a href="roteiro.html">roteiro</a> e <a href="legenda.html">legenda e hashtags</a>. A plataforma completa com login e IA está em construção.</div>
-</section>
-
-<h2>Para quem é</h2>
-<div class="grid">
-  <div class="card"><h3>Quem está começando</h3><p>Onboarding guiado, explicação em cada ferramenta e um plano de ação simples para a primeira semana.</p></div>
-  <div class="card"><h3>Criadores avançados</h3><p>Fluxos densos e rápidos: cortes, legendas, séries de conteúdo e calendário em várias redes.</p></div>
-  <div class="card"><h3>Equipes e marcas</h3><p>Workspaces, papéis, aprovação de publicações e identidade visual compartilhada.</p></div>
-</div>
-
-<h2>Princípios</h2>
-<div class="grid">
-  <div class="card"><h3>IA honesta</h3><p>Sem promessa de viralização. Cada recomendação mostra os dados que a sustentam, e fatos, hipóteses e sugestões ficam separados.</p></div>
-  <div class="card"><h3>Dados reais ou nenhum</h3><p>Métricas só aparecem quando a rede social fornece pela API oficial, com data e hora da coleta.</p></div>
-  <div class="card"><h3>Custo antes de gastar</h3><p>Tarefas que consomem créditos mostram a estimativa e só começam depois da sua confirmação.</p></div>
-  <div class="card"><h3>Privacidade (LGPD)</h3><p>Coletamos o mínimo, você pode exportar ou apagar seus dados, e vídeos não ficam guardados sem você pedir.</p></div>
-</div>
-
-</main>
-<footer class="rodape">
-  <div class="wrap rodape-in">
-    <p><b>AURIX BR</b> · plataforma brasileira de IA para criadores. Em desenvolvimento.</p>
-    <p class="links"><a href="privacidade.html">Privacidade</a><a href="termos.html">Termos</a><a href="status.html">Andamento</a></p>
-    <p class="fino">Nenhuma métrica, integração ou resultado exibido aqui é simulado. Atualizado em 2026-11-16 05:24 UTC.</p>
-  </div>
-</footer>
-<script src="assets/app.js" defer></script>
-
+<div id="app"><div class="boot"><img src="icon.svg" width="56" height="56" alt=""><span>AURIX <b>BR</b></span></div></div>
+<div id="camadas"></div>
+<noscript><p style="padding:24px;color:#fff">O AURIX BR precisa de JavaScript ativado para funcionar.</p></noscript>
+<script>window.AURIX_VERSION='202611160623';</script>
+<script type="module" src="assets/app.js?v=202611160623"></script>
 </body>
 </html>

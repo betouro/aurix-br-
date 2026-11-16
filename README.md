@@ -1,4 +1,3 @@
-# AURIX BR — site publicado
+# AURIX BR
 
-Este repositório contém **somente o site já compilado**, gerado automaticamente.
-Não edite aqui: qualquer alteração é sobrescrita no próximo deploy.
+Aplicativo publicado (arquivos compilados). Gerado automaticamente; não edite aqui.
