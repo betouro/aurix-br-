@@ -1,6 +1,6 @@
 // Service worker: deixa o app abrir sem internet depois da primeira visita.
-const CACHE = 'aurix-202611160623';
-const BASE = ['./', 'index.html', 'assets/app.css?v=202611160623', 'assets/app.js?v=202611160623', 'icon.svg', 'icon-180.png', 'manifest.webmanifest'];
+const CACHE = 'aurix-202611160656';
+const BASE = ['./', 'index.html', 'assets/app.css?v=202611160656', 'assets/app.js?v=202611160656', 'icon.svg', 'icon-180.png', 'manifest.webmanifest'];
 self.addEventListener('install', (e) => { e.waitUntil(caches.open(CACHE).then((c) => c.addAll(BASE)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', (e) => {
   e.waitUntil(caches.keys().then((ks) => Promise.all(ks.filter((k) => k !== CACHE).map((k) => caches.delete(k)))).then(() => self.clients.claim()));
