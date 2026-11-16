@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cortes de vídeo — AURIX BR</title>
+<meta name="description" content="Corte e reenquadre vídeos em 9:16, 1:1 ou 16:9 direto no navegador.">
+<meta name="theme-color" content="#121216">
+<meta property="og:title" content="Cortes de vídeo — AURIX BR">
+<meta property="og:description" content="Corte e reenquadre vídeos em 9:16, 1:1 ou 16:9 direto no navegador.">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<header class="topo">
+  <div class="wrap topo-in">
+    <a class="marca" href="index.html" aria-label="AURIX BR — início">
+      <img src="assets/icon.svg" alt="" width="28" height="28"><span>AURIX <b>BR</b></span>
+    </a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav id="menu" class="menu" aria-label="Principal"><a href="index.html">Início</a><a href="ferramentas.html">Ferramentas</a><a href="recursos.html">Recursos</a><a href="planos.html">Planos</a><a href="ajuda.html">Ajuda</a><a href="status.html">Andamento</a></nav>
+  </div>
+</header>
+<main id="conteudo" class="wrap">
+<p class="eyebrow"><a href="ferramentas.html">Ferramentas</a> · Cortes</p>
+<h1>Cortes de vídeo</h1>
+<p class="privado">🔒 O vídeo é processado no seu aparelho e não é enviado para lugar nenhum. Use apenas vídeos seus ou que você tem direito de usar.</p>
+
+<div class="form card">
+  <label class="campo">1. Escolha o vídeo
+    <input id="arquivo" type="file" accept="video/*">
+  </label>
+  <div class="palco" id="palco" hidden><video id="video" playsinline controls preload="metadata"></video></div>
+  <div class="linha">
+    <label class="campo">Início (segundos)<input id="inicio" type="number" min="0" step="0.1" value="0" inputmode="decimal" disabled></label>
+    <label class="campo">Fim (segundos)<input id="fim" type="number" min="0" step="0.1" value="0" inputmode="decimal" disabled></label>
+  </div>
+  <div class="acoes">
+    <button class="mini" id="marcar-inicio" type="button" disabled>Marcar início aqui</button>
+    <button class="mini" id="marcar-fim" type="button" disabled>Marcar fim aqui</button>
+  </div>
+  <div class="linha">
+    <label class="campo">Formato
+      <select id="formato" disabled>
+        <option value="9:16">9:16 — Reels, TikTok, Shorts, Kwai</option>
+        <option value="1:1">1:1 — feed quadrado</option>
+        <option value="4:5">4:5 — feed vertical</option>
+        <option value="16:9">16:9 — YouTube horizontal</option>
+      </select>
+    </label>
+    <label class="campo">Posição do enquadramento
+      <input id="posicao" type="range" min="0" max="100" value="50" disabled>
+    </label>
+  </div>
+  <label class="campo">Prévia do enquadramento</label>
+  <div class="palco"><canvas id="previa" width="270" height="480"></canvas></div>
+  <div class="acoes">
+    <button class="btn primario" id="gerar" type="button" disabled>Gerar corte</button>
+    <button class="btn" id="cancelar" type="button" hidden>Cancelar</button>
+  </div>
+  <p class="msg" id="msg" aria-live="polite">Escolha um vídeo para começar.</p>
+  <a class="btn" id="baixar" hidden download>Baixar vídeo</a>
+</div>
+
+<div class="aviso">Como funciona: o corte é gravado em tempo real, então um trecho de 30 s leva cerca de 30 s. Mantenha a tela aberta. No iPhone o arquivo sai em MP4; em alguns navegadores de computador, em WebM.</div>
+
+</main>
+<footer class="rodape">
+  <div class="wrap rodape-in">
+    <p><b>AURIX BR</b> · plataforma brasileira de IA para criadores. Em desenvolvimento.</p>
+    <p class="links"><a href="privacidade.html">Privacidade</a><a href="termos.html">Termos</a><a href="status.html">Andamento</a></p>
+    <p class="fino">Nenhuma métrica, integração ou resultado exibido aqui é simulado. Atualizado em 2026-11-16 05:24 UTC.</p>
+  </div>
+</footer>
+<script src="assets/app.js" defer></script>
+<script src="assets/cortes.js" defer></script>
+</body>
+</html>

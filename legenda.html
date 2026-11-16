@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Legenda e hashtags — AURIX BR</title>
+<meta name="description" content="Confira o tamanho da sua legenda nos limites de cada rede social.">
+<meta name="theme-color" content="#121216">
+<meta property="og:title" content="Legenda e hashtags — AURIX BR">
+<meta property="og:description" content="Confira o tamanho da sua legenda nos limites de cada rede social.">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<header class="topo">
+  <div class="wrap topo-in">
+    <a class="marca" href="index.html" aria-label="AURIX BR — início">
+      <img src="assets/icon.svg" alt="" width="28" height="28"><span>AURIX <b>BR</b></span>
+    </a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav id="menu" class="menu" aria-label="Principal"><a href="index.html">Início</a><a href="ferramentas.html">Ferramentas</a><a href="recursos.html">Recursos</a><a href="planos.html">Planos</a><a href="ajuda.html">Ajuda</a><a href="status.html">Andamento</a></nav>
+  </div>
+</header>
+<main id="conteudo" class="wrap">
+<p class="eyebrow"><a href="ferramentas.html">Ferramentas</a> · Legenda</p>
+<h1>Legenda e hashtags</h1>
+<div class="form card">
+  <label class="campo">Sua legenda<textarea id="texto" style="min-height:180px" placeholder="Escreva ou cole a legenda aqui…"></textarea></label>
+  <div class="acoes">
+    <button class="btn primario" id="copiar" type="button">Copiar legenda</button>
+    <button class="btn" id="copiar-tags" type="button">Copiar só as hashtags</button>
+    <button class="btn" id="limpar-tags" type="button">Remover hashtags repetidas</button>
+  </div>
+  <p class="msg" id="msg" aria-live="polite"></p>
+  <p class="msg" id="resumo"></p>
+</div>
+<h2>Limites por rede</h2>
+<div class="grid" id="medidores"></div>
+<p class="privado">Limites oficiais divulgados pelas plataformas para legendas e descrições de publicações comuns. As redes podem alterá-los; contas pagas (ex.: X Premium) podem ter limites maiores.</p>
+
+</main>
+<footer class="rodape">
+  <div class="wrap rodape-in">
+    <p><b>AURIX BR</b> · plataforma brasileira de IA para criadores. Em desenvolvimento.</p>
+    <p class="links"><a href="privacidade.html">Privacidade</a><a href="termos.html">Termos</a><a href="status.html">Andamento</a></p>
+    <p class="fino">Nenhuma métrica, integração ou resultado exibido aqui é simulado. Atualizado em 2026-11-16 05:24 UTC.</p>
+  </div>
+</footer>
+<script src="assets/app.js" defer></script>
+<script src="assets/legenda.js" defer></script>
+</body>
+</html>

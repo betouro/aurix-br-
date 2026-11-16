@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Calendário de conteúdo — AURIX BR</title>
+<meta name="description" content="Planeje publicações por data e rede e exporte para o calendário do celular.">
+<meta name="theme-color" content="#121216">
+<meta property="og:title" content="Calendário de conteúdo — AURIX BR">
+<meta property="og:description" content="Planeje publicações por data e rede e exporte para o calendário do celular.">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<header class="topo">
+  <div class="wrap topo-in">
+    <a class="marca" href="index.html" aria-label="AURIX BR — início">
+      <img src="assets/icon.svg" alt="" width="28" height="28"><span>AURIX <b>BR</b></span>
+    </a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav id="menu" class="menu" aria-label="Principal"><a href="index.html">Início</a><a href="ferramentas.html">Ferramentas</a><a href="recursos.html">Recursos</a><a href="planos.html">Planos</a><a href="ajuda.html">Ajuda</a><a href="status.html">Andamento</a></nav>
+  </div>
+</header>
+<main id="conteudo" class="wrap">
+<p class="eyebrow"><a href="ferramentas.html">Ferramentas</a> · Calendário</p>
+<h1>Calendário de conteúdo</h1>
+<p class="privado">🔒 Salvo só neste aparelho e navegador. Use "Exportar backup" para guardar uma cópia.</p>
+
+<form class="form card" id="form">
+  <input type="hidden" id="id">
+  <label class="campo">Título / ideia<input id="titulo" required maxlength="160" placeholder="Ex.: 3 erros ao temperar frango"></label>
+  <div class="linha">
+    <label class="campo">Data<input id="data" type="date" required></label>
+    <label class="campo">Hora<input id="hora" type="time" value="19:00"></label>
+  </div>
+  <div class="linha">
+    <label class="campo">Rede
+      <select id="rede">
+        <option>TikTok</option><option>Instagram</option><option>YouTube</option><option>Facebook</option>
+        <option>Kwai</option><option>X</option><option>Twitch</option><option>Pinterest</option><option>LinkedIn</option>
+      </select>
+    </label>
+    <label class="campo">Formato
+      <select id="formato"><option>Vídeo curto</option><option>Vídeo longo</option><option>Carrossel</option><option>Foto</option><option>Live</option><option>Story</option><option>Texto</option></select>
+    </label>
+    <label class="campo">Status
+      <select id="status"><option value="rascunho">Rascunho</option><option value="agendado">Agendado</option><option value="publicado">Publicado</option></select>
+    </label>
+  </div>
+  <label class="campo">Notas (roteiro, legenda, link)<textarea id="notas" maxlength="4000"></textarea></label>
+  <div class="acoes">
+    <button class="btn primario" type="submit" id="salvar">Adicionar</button>
+    <button class="btn" type="button" id="limpar">Limpar</button>
+  </div>
+</form>
+
+<h2>Publicações</h2>
+<div class="acoes">
+  <select id="filtro" class="mini" style="width:auto"><option value="">Todos os status</option><option value="rascunho">Rascunhos</option><option value="agendado">Agendados</option><option value="publicado">Publicados</option></select>
+  <button class="mini" id="ics" type="button">Exportar para Calendário (.ics)</button>
+  <button class="mini" id="exportar" type="button">Exportar backup</button>
+  <label class="mini" style="cursor:pointer">Importar backup<input id="importar" type="file" accept="application/json" hidden></label>
+</div>
+<p class="msg" id="msg" aria-live="polite"></p>
+<div class="lista" id="lista"></div>
+
+</main>
+<footer class="rodape">
+  <div class="wrap rodape-in">
+    <p><b>AURIX BR</b> · plataforma brasileira de IA para criadores. Em desenvolvimento.</p>
+    <p class="links"><a href="privacidade.html">Privacidade</a><a href="termos.html">Termos</a><a href="status.html">Andamento</a></p>
+    <p class="fino">Nenhuma métrica, integração ou resultado exibido aqui é simulado. Atualizado em 2026-11-16 05:24 UTC.</p>
+  </div>
+</footer>
+<script src="assets/app.js" defer></script>
+<script src="assets/calendario.js" defer></script>
+</body>
+</html>

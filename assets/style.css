@@ -81,3 +81,33 @@ input[type="search"] { width: 100%; padding: 12px; border-radius: 10px; border: 
 .fino { font-size: 12px; opacity: .8; }
 .legal { max-width: 760px; }
 .legal li { margin-bottom: 6px; color: var(--muted); }
+
+/* Ferramentas */
+.form { display: grid; gap: 10px; }
+.form .linha { display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr)); }
+label.campo { display: grid; gap: 4px; font-size: 14px; color: var(--muted); }
+input, select, textarea { width: 100%; padding: 11px 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--bg-2); color: var(--text); font: inherit; font-size: 16px; }
+textarea { min-height: 110px; resize: vertical; }
+input[type="range"] { padding: 0; }
+button { font: inherit; cursor: pointer; }
+.btn:disabled { opacity: .5; cursor: not-allowed; }
+.acoes { display: flex; gap: 8px; flex-wrap: wrap; }
+.lista { display: grid; gap: 8px; margin-top: 12px; }
+.item { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; display: grid; gap: 6px; }
+.item .topo-item { display: flex; justify-content: space-between; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+.item small { color: var(--muted); }
+.mini { padding: 6px 10px; font-size: 14px; border-radius: 8px; border: 1px solid var(--line); background: var(--bg-2); color: var(--text); }
+.st-rascunho { color: var(--muted); } .st-agendado { color: var(--violet); } .st-publicado { color: var(--ok); }
+.medidor { display: grid; gap: 6px; }
+.medidor .barra { height: 6px; background: var(--bg-2); border-radius: 99px; overflow: hidden; }
+.medidor .barra i { display: block; height: 100%; background: var(--ok); }
+.medidor.excedeu .barra i { background: #e5566b; }
+.medidor.excedeu b { color: #e5566b; }
+.palco { background: #000; border-radius: 12px; overflow: hidden; display: grid; place-items: center; max-height: 60vh; }
+.palco video, .palco canvas { max-width: 100%; max-height: 60vh; display: block; }
+.msg { font-size: 15px; color: var(--muted); }
+.msg.erro { color: #e5566b; }
+.msg.ok { color: var(--ok); }
+.privado { font-size: 13px; color: var(--muted); }
+
+[hidden] { display: none !important; }

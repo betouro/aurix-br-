@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Roteiro — AURIX BR</title>
+<meta name="description" content="Monte roteiros com gancho, desenvolvimento e CTA e veja a duração estimada da fala.">
+<meta name="theme-color" content="#121216">
+<meta property="og:title" content="Roteiro — AURIX BR">
+<meta property="og:description" content="Monte roteiros com gancho, desenvolvimento e CTA e veja a duração estimada da fala.">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<header class="topo">
+  <div class="wrap topo-in">
+    <a class="marca" href="index.html" aria-label="AURIX BR — início">
+      <img src="assets/icon.svg" alt="" width="28" height="28"><span>AURIX <b>BR</b></span>
+    </a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav id="menu" class="menu" aria-label="Principal"><a href="index.html">Início</a><a href="ferramentas.html">Ferramentas</a><a href="recursos.html">Recursos</a><a href="planos.html">Planos</a><a href="ajuda.html">Ajuda</a><a href="status.html">Andamento</a></nav>
+  </div>
+</header>
+<main id="conteudo" class="wrap">
+<p class="eyebrow"><a href="ferramentas.html">Ferramentas</a> · Roteiro</p>
+<h1>Roteiro de vídeo</h1>
+<p class="privado">🔒 Rascunhos salvos só neste aparelho.</p>
+
+<div class="form card">
+  <label class="campo">Modelo
+    <select id="modelo">
+      <option value="">Em branco</option>
+      <option value="lista">Lista (“3 erros que…”)</option>
+      <option value="antes">Antes e depois</option>
+      <option value="tutorial">Tutorial passo a passo</option>
+      <option value="historia">História pessoal</option>
+      <option value="mito">Mito × verdade</option>
+    </select>
+  </label>
+  <label class="campo">Título do roteiro<input id="titulo" maxlength="160"></label>
+  <label class="campo">Gancho (primeiros 3 segundos)<textarea id="gancho" style="min-height:70px"></textarea></label>
+  <label class="campo">Desenvolvimento<textarea id="corpo" style="min-height:160px"></textarea></label>
+  <label class="campo">Chamada para ação (CTA)<textarea id="cta" style="min-height:60px"></textarea></label>
+  <div class="linha">
+    <label class="campo">Ritmo da fala
+      <select id="ritmo"><option value="130">Calmo (~130 palavras/min)</option><option value="150" selected>Normal (~150 palavras/min)</option><option value="175">Rápido (~175 palavras/min)</option></select>
+    </label>
+    <div class="campo">Duração estimada<b id="duracao" style="font-size:22px;color:var(--text)">0 s</b><small id="detalhe"></small></div>
+  </div>
+  <div class="acoes">
+    <button class="btn primario" id="salvar" type="button">Salvar rascunho</button>
+    <button class="btn" id="copiar" type="button">Copiar roteiro</button>
+    <button class="btn" id="novo" type="button">Novo</button>
+  </div>
+  <p class="msg" id="msg" aria-live="polite"></p>
+</div>
+
+<h2>Rascunhos</h2>
+<div class="lista" id="lista"></div>
+
+</main>
+<footer class="rodape">
+  <div class="wrap rodape-in">
+    <p><b>AURIX BR</b> · plataforma brasileira de IA para criadores. Em desenvolvimento.</p>
+    <p class="links"><a href="privacidade.html">Privacidade</a><a href="termos.html">Termos</a><a href="status.html">Andamento</a></p>
+    <p class="fino">Nenhuma métrica, integração ou resultado exibido aqui é simulado. Atualizado em 2026-11-16 05:24 UTC.</p>
+  </div>
+</footer>
+<script src="assets/app.js" defer></script>
+<script src="assets/roteiro.js" defer></script>
+</body>
+</html>
